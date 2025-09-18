@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sravalika's Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SRAVALIKA</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h1>Hello, I'm Sravalika 👋</h1>
+    <p>A passionate CSE student learning Python, Web Development, and building cool projects.</p>
+    <a href="resume.pdf" download class ="btn">Download Resume</a>
+    
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+  <h3>Multi-Animal Recognition 🐾</h3>
+  <p>An AI-based project that identifies multiple animals in an image using Machine Learning & Computer Vision. 
+     It can recognize animals like dogs, cats, cows, and more with real-time predictions.</p>
+  <a href="https://github.com/sravalika94/multiclass-animal-recognition.git" target="_blank" class="btn">
+    🔗 View on GitHub
+  </a>
+</div>
+      </div>
+      
+        <div class="project-card">
+  <h3>Java Project ☕</h3>
+  <p>A core Java application developed as part of my coursework.  
+     It demonstrates OOP concepts, file handling, and real-world problem-solving.</p>
+  <a href="https://github.com/YourUsername/Java-Project" target="_blank" class="btn">🔗 GitHub Repo</a>
+</div>
+      </div>
+      <div class="project-card">
+  <h3>Control Photo Sharing on Social Media 🔒📸</h3>
+  <p>A privacy-focused project that gives users more control over how their photos are shared online.  
+     It focuses on secure sharing, watermarking, and restricted access features.</p>
+</div>
+        <button class="btn">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sravali | Built with 💻 HTML, CSS & JS</p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

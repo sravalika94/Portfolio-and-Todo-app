@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 450px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #74ebd5;
+}
+
+button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#addBtn {
+  background: #0d9ac2;
+  color: #fff;
+}
+
+#addBtn:hover {
+  background: #2dc1d5;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f7f7f7;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li.completed span.task-text {
+  text-decoration: line-through;
+  color: #19a1d7;
+}
+
+li span.task-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+button.complete-btn {
+  background: #28a745;
+  color: #fff;
+  margin-right: 5px;
+}
+
+button.complete-btn:hover {
+  background: #218838;
+}
+
+button.edit-btn {
+  background: #ffc107;
+  color: #fff;
+  margin-right: 5px;
+}
+
+button.edit-btn:hover {
+  background: #e0a800;
+}
+
+button.delete-btn {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+button.delete-btn:hover {
+  background: #d9363e;
+}
+
+.clear-btn {
+  width: 100%;
+  margin-top: 15px;
+  background: #9f3d8f;
+  color: #fff;
+  padding: 10px;
+}
+
+.clear-btn:hover {
+  background: #5abde7;
+}
+
+.filter-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  background: #3ec2ea;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.filter-btn:hover {
+  background: s#5ccbbb;
+}
+
+/* Responsive */
+@media(max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  input[type="text"] {
+    padding: 10px;
+  }
+  button {
+    padding: 10px;
+  }
+}
